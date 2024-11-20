@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./response.html" method="get">
+        <h1>Update Information</h1>
+        <p>Use the form below to edit your information</p>
+        <br>
+            <label for="First name"><i>First name:</i></label>
+            <input type="text" id="First name" name="First name" autocomplete="off">
+            <br><br>
+            <label for="Last name"><i>Last name:</i></label>
+            <input type="text" id="Last name" name="Last name" autocomplete="off">
+            <br><br>
+            <label for="Favorite sport:"><i>Favorite sport:</i></label>
+            <select name="Favorite sport" id="Favorite sport">
+                <option value="Badminton">Badminton</option>
+                <option value="Cricket">cricket</option>
+                <option value="volleyball">volleyball</option>
+                <option value="Basket ball">Basket ball</option>
+                <option value="Kabaddi">Kabaddi</option>
+            </select>
+            <br><br>
+            <label for="gender"><i>Gender:</i></label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="notsure" value="notsure">
+            <label for="notsure">notsure</label>
+            <br><br>
+            <label for="car"><i>Car Models owned:</i></label>
+            <input type="checkbox" name="ford" id="ford">
+            <label for="ford">Ford</label>
+
+            <input type="checkbox" name="Toyota" id="Toyota">
+            <label for="Toyota">Toyota</label>
+            <br><br>
+            <input type="submit" value="save changes">         
+    </form>
+</body>
+</html>

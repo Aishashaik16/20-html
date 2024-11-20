@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./response.html" method="get">
+        <center><h1>Telangana State Road Transport Corporation</h1></center>
+        <center><h3>GENERAL BUS PASS APPLICATION</h3></center>
+        <fieldset>
+            <legend>
+                <input type="text" value="Applicant Details">
+            </legend>
+            <label for="Name"><b>Name</b></label>
+            &emsp;&emsp;&emsp;&emsp;<input type="text" id="Name" name="Name" maxlength="15" required/>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="Father's/Guardian's name"><b>Father's/Guardian's name</b></label>
+            &emsp;&emsp;<input type="text" id="Father's/Guardian's name" name="Father's/Guardian's name" required/>
+            <br><br>
+            <label for="DOB"><b>Date of Birth</b></label>
+            &emsp;<input type="date" id="DOB" name="DOB" required/>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="gender"><b>Gender</b></label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" name="gender" id="female" value="female" required/>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="male" value="male" required/>
+            <label for="male">male</label>
+            <br><br>
+            <label for="aao"><b>Age As on: </b></label>
+            &emsp;&emsp;<input type="text" id="yrs" name="aao" size="1" required/>
+            <label for="yrs">year(s)</label>
+            <input type="text" id="months" name="aao" size="1" required/>
+            <label for="months">months(s)</label>
+            <input type="text" id="days" name="aao" size="1" required/>
+            <label for="days">day(s)</label>
+            <label for="Adhar No"><b>Adhar No</b></label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" id="Adhar No" name="Adhar No" maxlength="12" required/>
+            <br><br>
+            <label for="Wano"><b>WhatsApp No</b></label>
+            <input type="text" id="Wano" name="Wano" maxlength="10" required/>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="mailid"><b>Email-id:</b></label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" id="mailid" name="mailid" required/>
+            <br><br>
+            <label for="filename"><b>Photo</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" id="myFile" name="filename" required/>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <input type="text" value="Residential Address Details">
+            </legend>
+            <label for="appaddr"><b>Applicant's Address</b></label>
+            <textarea name="appaddr" id="appaddr" rows="5" height="8"></textarea>
+            &emsp;&emsp;&emsp;&emsp;
+            <label for="District"><b>District</b></label>
+            <select name="District" id="District">
+                <option value="Suryapet">Suryapet</option>
+                <option value="Medchal">Medchal</option>
+                <option value="Rangareddy">Rangareddy</option>
+                <option value="Sangareddy">Sangareddy</option>
+                <option value="Khammam">Khammam</option>
+            </select>
+            <br><br>
+            <label for="Mandal"><b>Mandal</b></label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;
+            <select name="Mandal" id="Mandal">
+                <option value="Kodad">Kodad</option>
+                <option value="Kalluru">Kalluru</option>
+                <option value="Ananthagiri">Ananthagiri</option>
+                <option value="Mellacheruvu">Mellacheruvu</option>
+                <option value="Thallada">Thallada</option>
+            </select>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label for="village"><b>Village</b></label>
+            <select name="Village" id="Village">
+                <option value="Warangal">Warangal</option>
+                <option value="Jagityal">Jagityal</option>
+                <option value="Gudibanda">Gudibanda</option>
+                <option value="Wanaparthy">Wanaparthy</option>
+                <option value="Karimnagar">Karimnagar</option>
+            </select>
+            <br><br>
+            <label for="pin"><b>Pincode</b></label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" name="pin" id="pin" required/>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <input type="text" value="Pass type Details">
+            </legend>
+            <label for="city"><b>city</b></label>
+            &emsp;&emsp;&emsp;
+            <select name="city" id="city">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Khammam">Khammam</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+            <br><br>
+            <label for="pt"><b>Pass Type</b></label>
+            &nbsp;
+            <select name="pt" id="pt">
+                <option value="----Select----">----Select----</option>
+                <option value="Ordinary pass">Ordinary pass</option>
+                <option value="General pass">General Pass</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <input type="text" value="Mode of Payment and Pass Collection">
+            </legend>
+            <label for="pm"><b>Payment mode</b></label>
+            &nbsp;
+            <select name="pm" id="pm">
+                <option value="Select payment mode">Select payment mode</option>
+                <option value="UPI">UPI</option>
+                <option value="Netbanking">Netbanking</option>
+            </select>
+            <br><br>
+            <label for="pdm"><b>Pass delivery mode</b></label>
+            &nbsp;
+            <select name="pdm" id="pdm">
+                <option value="Select pass delivery mode">Select pass delivery mode</option>
+                <option value="pass delivery">pass delivery</option>
+                <option value="pickup">pickup</option>
+            </select>
+            <br><br>
+            <label for="cp"><b>Center at which you want to collect pass</b></label>
+            &nbsp;
+            <select name="cp" id="cp">
+                <option value="----Select----">----Select----</option>
+                <option value="Station">Station</option>
+                <option value="Online">Online</option>
+            </select>
+        </fieldset>
+
+        
+    </form>
+
+    
+
+</body>
+</html>
